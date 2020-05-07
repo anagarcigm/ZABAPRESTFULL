@@ -1,0 +1,39 @@
+@Metadata.layer: #CORE
+ 
+@UI.headerInfo: { typeName: 'Material' ,
+                  typeNamePlural: 'Materials',
+                  title: { value: 'Material'  } }
+ 
+annotate view ZAMaterialPlant with
+{
+  @UI.facet: [
+             { id:'idGeneralInformation' ,
+               type: #COLLECTION ,
+               label: 'General Information' ,
+               position: 10 } ,
+             { type: #IDENTIFICATION_REFERENCE ,
+               label : 'General Information',
+               parentId: 'idGeneralInformation',
+               id: 'idIdentification' ,
+               position: 10 } ]
+ 
+  @UI.selectionField: [{ position: 10 }]
+  @UI.lineItem: [{ position: 10 }]
+  @UI.identification: [{ position: 10 }]
+  Plant;
+ 
+  @UI.selectionField: [{ position: 20 }]
+  @UI.lineItem: [{ position: 20 }]
+  @UI.identification: [{ position: 20 }]
+  Material;
+ 
+ 
+  @UI.selectionField: [{ position: 40 }]
+  @UI.lineItem: [{ position: 40 }]
+  @UI.identification: [{ position: 40 }]
+  MaterialGroup;
+ 
+  @UI.lineItem: [{ position: 50 }]
+  @UI.identification: [{ position: 50 }]
+  MaterialSafetyStockQty;
+}

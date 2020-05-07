@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definition zamaterial_plant'
+define service Zamaterialplant_sd {
+  expose ZAMaterialPlant as MaterialPlant;
+}
